@@ -1,0 +1,50 @@
+#real_alert
+{
+    color: red;
+    font-weight: bolder;
+}
+
+/* I intentionally made the padding exist on this part so it'd be much easier to click and prevent accidents */
+/* This is because this expands the clickable range of link */
+#test_only
+{
+    color: red;
+    border: 15px solid green;
+    padding: 30px;
+    background-color: greenyellow;
+}
+
+.missile-link
+{
+    display: block;
+}
+
+.content
+{
+    margin: 5px;
+}
+
+/* Red and black normally tells me to not mess with it. */
+#real-section
+{
+    background-color: black;
+    padding: 30px;
+    border: 10px solid red;
+}
+
+#test-section
+{
+    border: 10px solid green;
+    background-color: greenyellow;
+}
+
+.section
+{
+    border: 1px black double;
+    box-shadow: 4px 4px grey;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    margin-right: 80%;
+    text-align: center;
+}

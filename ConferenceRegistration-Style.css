@@ -1,0 +1,19 @@
+body
+{
+    background-color: #c4c4c4;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.title
+{
+    background-color: #2D7DD2;
+    color:white;
+}
+
+.col-md-5
+{
+    background-color: #97CC04;
+    border-radius: 15px;
+    box-shadow:  5px 10px #739a01;
+}
