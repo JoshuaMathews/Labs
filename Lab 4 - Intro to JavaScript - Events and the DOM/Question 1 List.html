@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+
+    <div>
+        <input name="input-list" type="text" id="input-list" >
+        <button id="add-list" name="add-list">Add to List</button>
+        <button id="clear" name="clear">Clear List</button>
+
+    </div>
+
+    <div>
+        <ul id="main-list">
+
+        </ul>
+    </div>
+
+    <script>
+        let addButton = document.getElementById("add-list");
+        let clearButton = document.getElementById("clear");
+
+        let listSize = 10;
+
+        addButton.addEventListener('click', function() {
+            let text = document.getElementById("input-list").value;
+            let mainList = document.getElementById("main-list");
+
+            if(!text) {
+                alert("Input cannot be empty.")
+                return;
+            }
+
+            if(text.length > 50) {
+                alert("Greater than 50 characters, please delete some.")
+                return;
+            }
+
+            if(mainList.getElementsByTagName("li").length >= listSize)
+            {
+                alert("Your list already has " +  listSize + " items.")
+                return;
+            }
+
+            document.getElementById("input-list").value = "";
+
+            let node=document.createElement("LI");
+            let textnode = document.createTextNode(text);
+            node.appendChild(textnode);
+            mainList.appendChild(node);
+        });
+
+        clearButton.addEventListener('click', function() {
+            document.getElementById("main-list").innerHTML = "";
+        });
+    </script>
+</body>
+</html>
