@@ -1,0 +1,8 @@
+It uses Vue as a way to handle data and logic instead of using pure javascript. 
+A lot of the logic related to transfering the data from JS -> HTML is handled for you, you don't have to edit the raw HTML for example, vue handles it.
+The data binding and seeing your variable update with the value of input in real time.
+
+
+I like Vue a lot more of vanilla JS. Mainly because of the databinding and if I ever wanted to do vanilla JS with vue I could. 
+You're still doing the majority of the work yourself (a variable won't be magically added) but it abstracts some of the busy work away so you don't have to worry about it anymore.
+Something I didn't realize till I looked more into it, you can use other frameworks or libraries mixed with vue since it is independant. 
